@@ -1,0 +1,33 @@
+{
+  "n_seeds": 10,
+  "summary": {
+    "Gradient boosting (ref.)": {
+      "RMSE_mean": 5.9284,
+      "RMSE_std": 0.5195,
+      "MAE_mean": 4.2307,
+      "MAE_std": 0.5139,
+      "R2_mean": 0.8694,
+      "R2_std": 0.0153
+    },
+    "OLS, log(age)": {
+      "RMSE_mean": 7.3435,
+      "RMSE_std": 0.4266,
+      "MAE_mean": 5.6866,
+      "MAE_std": 0.3873,
+      "R2_mean": 0.7977,
+      "R2_std": 0.0338
+    },
+    "Ridge, CV-selected": {
+      "RMSE_mean": 7.1913,
+      "RMSE_std": 0.9114,
+      "MAE_mean": 5.1876,
+      "MAE_std": 0.4285,
+      "R2_mean": 0.8037,
+      "R2_std": 0.0635
+    }
+  },
+  "selected_degree_counts": {
+    "2": 9,
+    "3": 1
+  }
+}

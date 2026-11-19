@@ -1,0 +1,82 @@
+{
+  "n_dev": 815,
+  "n_test": 215,
+  "seed": 42,
+  "n_folds": 5,
+  "selected": {
+    "model": "Ridge, poly deg 2",
+    "degree": 2,
+    "alpha": 0.31622776601683794,
+    "val_rmse": 6.448709018626313
+  },
+  "lasso": {
+    "alpha": 0.001,
+    "val_rmse": 6.4533686298055795,
+    "nonzero_terms": 44,
+    "total_terms": 44
+  },
+  "leakage_check_val_rmse": {
+    "ridge_random_kfold": 5.75788926307732,
+    "ridge_group_kfold": 6.448709018626313,
+    "gb_random_kfold": 4.227330389244921,
+    "gb_group_kfold": 6.229425362596823
+  },
+  "comparison": [
+    {
+      "model": "Mean predictor",
+      "val_rmse": 16.301824688153168,
+      "val_sd": 1.3596194108672017,
+      "test_RMSE": 18.038898975361594,
+      "test_MAE": 14.673304494221714,
+      "test_R2": -0.0013709414131704012
+    },
+    {
+      "model": "OLS, raw age",
+      "val_rmse": 10.469341717273753,
+      "val_sd": 0.6324185306402407,
+      "test_RMSE": 10.73610577858494,
+      "test_MAE": 8.383240488211628,
+      "test_R2": 0.6452940322050656
+    },
+    {
+      "model": "OLS, log(age)",
+      "val_rmse": 7.295997750207934,
+      "val_sd": 0.5164694168704973,
+      "test_RMSE": 7.3576559176324485,
+      "test_MAE": 5.419939327793498,
+      "test_R2": 0.833408100532704
+    },
+    {
+      "model": "OLS, poly deg 2",
+      "val_rmse": 6.459062482670767,
+      "val_sd": 0.416784657001036,
+      "test_RMSE": 7.431078357293998,
+      "test_MAE": 5.230917184219721,
+      "test_R2": 0.830066652213734
+    },
+    {
+      "model": "Ridge, poly deg 2",
+      "val_rmse": 6.448709018626313,
+      "val_sd": 0.4086288317007917,
+      "test_RMSE": 7.436173708195976,
+      "test_MAE": 5.243585951260589,
+      "test_R2": 0.8298335321063456
+    },
+    {
+      "model": "Lasso, poly deg 2",
+      "val_rmse": 6.4533686298055795,
+      "val_sd": 0.40128115713266166,
+      "test_RMSE": 7.438532622141797,
+      "test_MAE": 5.239055258179317,
+      "test_R2": 0.829725554068821
+    },
+    {
+      "model": "Gradient boosting (ref.)",
+      "val_rmse": 6.229425362596823,
+      "val_sd": 0.8085718425630731,
+      "test_RMSE": 6.3441583696717725,
+      "test_MAE": 4.313163682736537,
+      "test_R2": 0.8761423135959769
+    }
+  ]
+}
